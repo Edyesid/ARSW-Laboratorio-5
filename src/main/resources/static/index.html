@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cinema bookings</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="/webjars/jquery/jquery.min.js"></script>
+    <script src="/webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/webjars/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>cinema</title>
+</head>
+<body>
+    <h1>Cinema Bookings</h1>
+
+    <label for="cinema">cinema</label>
+    <input type="text" id="cinema" placeholder="Name"/>
+
+    <label for="fecha">Date</label>
+    <input type="date" id="fecha" name="trip-start">
+
+    <button type=submit">GetFunctions</button>
+
+    <div>
+        <h2>
+            Cinema Selected:
+            <div id="cinemaSelected" style = "display:inline-block;"></div>
+        </h2>
+
+        <h2>
+            Movies:
+            <table style="width:33%">
+                <tr>
+                    <th>Name</th>
+                    <th>Genre</th>
+                    <th>Hour</th>
+                    <th>Availability</th>
+                </tr>
+            </table>
+
+        </h2>
+    </div>
+</body>
+</html>
