@@ -35,4 +35,29 @@ mvn spring-boot:run
 
 ![head](img/head.png)
 
+4. Suba la aplicación (mvn spring-boot:run), y rectifique:
+	1. Que la página sea accesible desde: http://localhost:8080/index.html
+	
+	![local](img/local.png)
+	
+	2. Al abrir la consola de desarrollador del navegador, NO deben aparecer mensajes de error 404 (es decir, que las librerías de JavaScript se cargaron correctamente).
+
+## Parte III - Front-End - Logica
+
+1. Ahora, va a crear un Módulo JavaScript que, a manera de controlador, mantenga los estados y ofrezca las operaciones requeridas por la vista. Para esto tenga en cuenta el patrón Módulo de JavaScript, y cree un módulo en la ruta static/js/app.js
+
+2. Copie el módulo provisto (apimock.js) en la misma ruta del módulo antes creado. En éste agréguele más planos (con más puntos) a los autores 'quemados' en el código.
+
+![js](img/js.png)
+
+3. Agregue la importación de los dos nuevos módulos a la página HTML (después de las importaciones de las librerías de jQuery y Bootstrap):
+
+![import](img/import.png)
+
+4. Haga que el módulo antes creado mantenga de forma privada:
+	* El nombre del cine seleccionado.
+	* La fecha de las funciones a consultar
+	* El listado de nombre, género y hora de las películas de las funciones del cine seleccionado. Es decir, una lista objetos, donde cada objeto tendrá tres propiedades: nombre de la película, género de la misma y hora de la función.
+Junto con dos operaciones públicas, una que permita cambiar el nombre del cinema actualmente seleccionado y otra que permita cambiar la fecha.
+
 
