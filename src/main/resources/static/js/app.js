@@ -31,11 +31,15 @@ var app = (function() {
         updateTable();
     }
 
-    function updateTable(){
+    function updateTable() {
 
     	for (i = 0; i < listFunctions_.length; i++) {
-    		var row = '<tr><td>' + listFunctions_[i].name + '</td><td>' + listFunctions_[i].genre + '</td><td>' + listFunctions_[i].hour + '</td><td>' + "en desarrollo" + '</tr>';
-    		console.log(row);
+    		console.log(listFunctions_[i]);
+    		$("#idtable > tbody").append(
+    				'<tr><td>' + listFunctions_[i].name + '</td>' + 
+    				'<td>' + listFunctions_[i].genre + '</td>' + 
+    				'<td>' + listFunctions_[i].hour + '</td>' + 
+    				'<td>' + "en desarrollo" + '</td></tr>');
     		}
     }
 
