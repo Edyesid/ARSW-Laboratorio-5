@@ -30,8 +30,8 @@ public class InMemoryCinemaPersistence implements CinemaPersitence {
     private final Map<String,Cinema> cinemas=new HashMap<>();
 
     public InMemoryCinemaPersistence() {
-        String functionDate = "2018-12-18";
-        String functionDate2 = "2019-12-18";
+        String functionDate = "2018-12-19 17:00";
+        String functionDate2 = "2018-12-19 19:40";
         
         List<CinemaFunction> functions= new ArrayList<>();
         List<CinemaFunction> functions2= new ArrayList<>();

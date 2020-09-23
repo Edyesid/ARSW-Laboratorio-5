@@ -1,6 +1,6 @@
-apimock = (function () {
+client = (function () {
 
-    var seats = [[true, true, true, true, true, true, true, true, true, true, true, true], [true, true, true, true, true, true, true, true, true, true, true, true], [true, true, true, true, true, true, true, true, true, true, true, true], [true, true, true, true, true, true, true, true, true, true, true, true], [true, true, true, true, true, true, true, true, true, true, true, true], [true, true, true, true, true, true, true, true, true, true, true, true], [true, true, true, true, true, true, true, true, true, true, true, true]];
+    var seats = [[true, true, true, true, true, false, true, true, true, true, true, true], [true, true, true, true, true, true, true, true, true, true, true, true], [true, true, true, true, true, true, true, true, true, true, true, true], [true, true, true, true, true, true, true, true, true, true, true, true], [true, true, true, true, true, true, true, true, true, true, true, true], [true, true, true, true, true, true, true, true, true, true, true, true], [true, true, true, true, true, true, true, true, true, true, true, true]];
     var mockdata = [];
     var function1Y = {"movie": {"name": "SuperHeroes Movie", "genre": "Action"}, "seats": seats, "date": "2018-12-19 17:00"};
     var function2Y = {"movie": {"name": "The Night", "genre": "Horror"}, "seats": seats, "date": "2018-12-19 19:40"};
@@ -19,6 +19,12 @@ apimock = (function () {
                     mockdata[cinema_name].functions.filter(
                     funct => funct.date.includes(fdate))
             );
+        },
+        
+        getfuncion: function (cinema_name, fdate, mvname, callback) {
+            var data = mockdata[cinema_name].functions.filter(funct => funct.date.includes(fdate));
+            var funcion = data.find(element => element.movie.name == mvname);
+            callback(funcion);
         }
 
     }
