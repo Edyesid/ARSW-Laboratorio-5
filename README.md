@@ -69,9 +69,13 @@ Junto con dos operaciones públicas, una que permita cambiar el nombre del cinem
 
 7. Verifique el funcionamiento de la aplicación. Inicie el servidor, abra la aplicación HTML5/JavaScript, y rectifique que al ingresar un cine existente, y una fecha en donde estén agendadas funciones, se cargue el listado de funciones del mismo.
 
+![parte 3](https://user-images.githubusercontent.com/54051399/93988060-e84eaa00-fd4d-11ea-851e-9781cb1d5745.jpeg)
+
 ## Parte IV - Front-End - Logica
 
 1. A la página, agregue un elemento de tipo Canvas, con su respectivo identificador. Haga que sus dimensiones no sean demasiado grandes para dejar espacio para los otros componentes, pero lo suficiente para poder visualizar cómodamente los asientos de la sala.
+
+![parte 4 punto 1](https://user-images.githubusercontent.com/54051399/93988075-ed135e00-fd4d-11ea-8a5a-adbdee34c3c1.png)
 
 2. Al módulo app.js agregue una operación que, dado el nombre de un cine, la fecha (con hora de la función "yyyy-mm-dd hh:mm"), y el nombre de la película dados como parámetros, haciendo uso del método getFunctionsByCinemaAndDate de apimock.js y de una función callback:
 
@@ -81,10 +85,12 @@ Junto con dos operaciones públicas, una que permita cambiar el nombre del cinem
 
 4. Verifique que la aplicación ahora permita: consultar las funciones de un cine y graficar la disponibilidad de asientos de aquella que se seleccione.
 
+![parte 4 punto 4](https://user-images.githubusercontent.com/54051399/93988082-eedd2180-fd4d-11ea-893f-732ff47cdc6b.png)
+
 5. Una vez funcione la aplicación (sólo front-end), haga un módulo (llámelo 'apiclient') que tenga las mismas operaciones del 'apimock', pero que para las mismas use datos reales consultados del API REST. Para lo anterior revise cómo hacer peticiones GET con jQuery, y cómo se maneja el esquema de callbacks en este contexto.
 
 6. Modifique el código de app.js de manera que sea posible cambiar entre el 'apimock' y el 'apiclient' con sólo una línea de código.
 
 7. Revise la documentación y ejemplos de los estilos de Bootstrap (ya incluidos en el ejercicio), agregue los elementos necesarios a la página para que sea más vistosa, y más cercana al mock dado al inicio del enunciado.
 
-
+![parte 4 punto 7](https://user-images.githubusercontent.com/54051399/93988064-e8e74080-fd4d-11ea-9117-4a3c8cd41e0b.jpeg)
